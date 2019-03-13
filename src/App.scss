@@ -1,3 +1,5 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 .App {
   text-align: center;
 }
@@ -30,4 +32,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  justify-content: flex-end;
 }
