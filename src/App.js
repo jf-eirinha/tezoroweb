@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.scss';
 import Grid from '@material-ui/core/Grid';
 import Topbar from './components/Topbar';
+import MainTextContent from './components/MainTextContent';
+import MainMediaContent from './components/MainMediaContent';
 
 class App extends Component {
   render() {
@@ -18,10 +20,15 @@ class App extends Component {
 
         <Grid container
           direction="row"
-          justify="space-around"
-          alignItems="center">
-            <Grid item>Hello 1</Grid>
-            <Grid item>Hello 2</Grid>
+          justify="center"
+          alignItems="center"
+          className="main-content">
+            <Grid item>
+              <MainTextContent/>
+            </Grid>
+            <Grid item>
+              <MainMediaContent/>
+            </Grid>
         </Grid>
 
         <Grid container
