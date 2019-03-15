@@ -10,6 +10,7 @@ import GoogleCloudLogo from './components/GoogleCloudLogo';
 import TensorFlowLogo from './components/TensorFlowLogo';
 import FlutterLogo from './components/FlutterLogo';
 import CardComponent from './components/CardComponent';
+import FooterComponent from './components/FooterComponent';
 
 class App extends Component {
   render() {
@@ -73,6 +74,14 @@ class App extends Component {
               <FlutterLogo />
             </CardComponent>
           </Grid>
+        </Grid>
+
+        <Grid container
+          direction="row"
+          justify="center"
+          alignItems="center"
+          className="footer">
+          <FooterComponent/>
         </Grid>
 
       </Grid>

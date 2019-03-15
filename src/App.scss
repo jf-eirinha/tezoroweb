@@ -92,3 +92,28 @@ sup {
   align-items: center;
 }
 
+.footer {
+  background-color: #767175;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-title {
+  padding-right: 20px;
+  margin: 0px;
+  width: 400px;
+  text-align: right;
+}
+
+.footer-text {
+  padding-left: 20px;
+  margin: 0px;
+  width: 400px;
+  text-align: left;
+}
+
