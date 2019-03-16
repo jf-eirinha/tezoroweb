@@ -117,3 +117,31 @@ sup {
   text-align: left;
 }
 
+.carousel-wrapper {
+  width: 100%;
+  background-color: #767175;
+}
+
+.howcard-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-component {
+  display: flex;
+  flex-direction: row;
+}
+
+.arch-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.arch-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

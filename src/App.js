@@ -11,6 +11,8 @@ import TensorFlowLogo from './components/TensorFlowLogo';
 import FlutterLogo from './components/FlutterLogo';
 import CardComponent from './components/CardComponent';
 import FooterComponent from './components/FooterComponent';
+import HowContent from './components/HowContent';
+import ArchComponent from './components/ArchComponent';
 
 class App extends Component {
   render() {
@@ -37,6 +39,21 @@ class App extends Component {
             <MainMediaContent />
           </Grid>
         </Grid>
+        
+        <Grid container
+          direction="row"
+          justify="center"
+          alignItems="center">
+          <ArchComponent/>
+        </Grid>
+
+        <Grid container
+          direction="row"
+          justify="center"
+          alignItems="center"
+          className="main-content">
+          <HowContent/>
+        </Grid>
 
         <Grid container
           direction="row"
@@ -60,17 +77,17 @@ class App extends Component {
           justify="space-around"
           alignItems="center">
           <Grid item xs={12} sm={4}>
-            <CardComponent title="Tezoro Everywhere" text="text">
+            <CardComponent title="Tezoro Everywhere" text="text" logoclass="logo-wrapper">
               <GoogleCloudLogo />
             </CardComponent>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <CardComponent title="Flexible Framework" text="text">
+            <CardComponent title="Flexible Framework" text="text" logoclass="logo-wrapper">
               <TensorFlowLogo />
             </CardComponent>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <CardComponent title="Less time coding" text="text">
+            <CardComponent title="Less time coding" text="text"  logoclass="logo-wrapper">
               <FlutterLogo />
             </CardComponent>
           </Grid>

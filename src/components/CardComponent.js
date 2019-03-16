@@ -1,11 +1,11 @@
 import React from 'react'
 
 const CardComponent = props => {
-  const { title, text, children } = props
+  const { title, text, children, logoclass } = props
 
   return (
     <div className="card-wrapper">
-      <div className="logo-wrapper">
+      <div className={logoclass}>
         <div>{children}</div>
       </div>
       <div className="card-content">
