@@ -145,3 +145,34 @@ sup {
   justify-content: center;
   align-items: center;
 }
+
+.economics-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100px;
+}
+
+.scheme-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 112px;
+  height: 100px;
+  padding: 40px;
+}
+
+.economics-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.economics-component-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}

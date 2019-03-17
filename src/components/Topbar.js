@@ -20,9 +20,9 @@ export default class Topbar extends React.Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
+                        <Nav.Link href="#how">How it works?</Nav.Link>
+                        <Nav.Link href="#value">Why should I used it?</Nav.Link>
+                        <Nav.Link href="#googlesap">Google and SAP</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

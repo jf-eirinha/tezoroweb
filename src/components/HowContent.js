@@ -46,8 +46,8 @@ function getStepContent(step) {
     case 2:
       return <HowCard>
         <p>When the user fills up its Tezoro box requests through the app.</p>
-        <p>The package is then drop on a pick up point at a predesignated drop point. This allows to only pick up on locations with high number of boxes as to save transport costs</p>
-        <p>The package is then drop on a pick up point at a predesignated drop point. This allows to only pick up on locations with high number of boxes as to save transport costs</p>
+        <p>The package is then dropped on a pick up point at a predesignated drop point. This allows to only pick up on locations with high number of boxes as to save transport costs</p>
+        <p>Users can get a Tezoro box at retail partner location for a small fee which is returned once the box arrives to a sorting center.</p>
         <p>We want to offer an alternative system in which we identify the origin of each package by the box it came from. For this the user would instead of scanning each item would only need to scan a box unique code</p>
       </HowCard>;
     case 3:
