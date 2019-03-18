@@ -5,7 +5,7 @@ export default class StackedIcon extends Component {
         return (
             <img
                 src={require('../stackedicon.svg')}
-                className="d-inline-block align-top"
+                className="scheme-block"
                 alt="Tezoro boxes icon"
             />
         )   

@@ -16,6 +16,7 @@ import EconomicsComponent from './components/EconomicsComponent';
 import TezoroBoxIcon from './components/TezoroBoxIcon';
 import StackedIcon from './components/StackedIcon';
 import TransportIcon from './components/TransportIcon';
+import DistChartComponent from './components/DistChartComponent';
 
 class App extends Component {
   render() {
@@ -69,35 +70,53 @@ class App extends Component {
           <MainMediaContent />
           <BrandContent />
         </Grid>
-        
-        <h1 id="economics">Does the economics work?</h1>
+
+        <h1 id="economics" className="section-title">The Economics</h1>
         <Grid container
           direction="row"
           justify="center"
-          alignItems="center"
+          alignItems="flex-start"
         >
-          <Grid item xs={12} sm={12}>
-            <EconomicsComponent title="On a unit basis">
-              <div className="economics-row">
-                <TezoroBoxIcon />
-                <div className="scheme-block">yoh</div>
-                <div className="scheme-block">yoh</div>                
-              </div>
-              <div className="economics-row">
-                <StackedIcon />
-                <div className="scheme-block">yoh</div>
-                <div className="scheme-block">yoh</div>
-              </div>
-              <div className="economics-row">
-                <TransportIcon />
-                <div className="scheme-block">yoh</div>
-                <div className="scheme-block">yoh</div>
-              </div>
+
+          <Grid item xs={12} sm={6}>
+            <h4 className="bullet-title center-title">On a unit basis</h4>
+            <EconomicsComponent>
+              <div className="divide">
+                <div>
+                  <div className="economics-row">
+                    <TezoroBoxIcon />
+                    <div className="scheme-block font-detail">
+                      <p className="number-highlight">$3</p>
+                      <p>value of each box with 15-20 packages</p>
+                    </div>
+                  </div>
+                  <div className="economics-row">
+                    <StackedIcon />
+                    <div className="scheme-block font-detail">
+                      <p className="number-highlight">6</p>
+                      <p>boxes minimum for each pick-up</p>
+                    </div>
+                  </div>
+                  <div className="economics-row">
+                    <TransportIcon />
+                    <div className="scheme-block font-detail">
+                      <p className="number-highlight">$3.5</p>
+                      <p>cost of each pick-up</p>
+                    </div>
+                  </div>
+                  </div>
+                <DistChartComponent />
+                </div>
+                
+              
             </EconomicsComponent>
-            <div>yoh</div>
           </Grid>
-          <Grid item xs={12} sm={12}>
-            <EconomicsComponent title="vs. Traditional Deposit-Return Schemes">
+          <Grid item xs={12} sm={6}>
+            <h4 className="bullet-title center-title">vs. Traditional Deposit-Return Schemes</h4>
+            <EconomicsComponent>
+              <p className="p-normal-small">Comparing with the German Pfand system, one of the most successful DRS implented Pfand system, Tezoro improves the user value proposition by eliminating the hassle of reusing.</p>
+              <p className="p-normal-small">Pfand's adhering retailers to operate the deposit system at profit despite holding many significant costs which Tezoro will not bear, namely: the costs with reverse vending machines and space/area costs.</p>
+              <p className="p-normal-small">By giving out rewards rather than money Tezoro will manage to gain some extra value by buying the rewards at a slight discount to face value. This will also represent a significant working capital advantage, as it delays the redenmention of the user's credit and enables us to pay do suppliers later.</p>
             </EconomicsComponent>
           </Grid>
         </Grid>

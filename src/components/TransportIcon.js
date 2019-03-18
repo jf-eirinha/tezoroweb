@@ -5,7 +5,7 @@ export default class TransportIcon extends Component {
         return (
             <img
                 src={require('../truck.svg')}
-                className="d-inline-block align-top"
+                className="scheme-block"
                 alt="Tezoro transport icon"
             />
         )   

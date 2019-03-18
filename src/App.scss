@@ -1,5 +1,11 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+$font-normal-color-highlight: #767175;
+$font-normal-color: #a09a9a;
+$font-color-title: #423e3e;
+$font-p: "lato", sans-serif;
+$font-t: "Fira Sans", sans-serif;
+
 .App {
   text-align: center;
 }
@@ -149,18 +155,18 @@ sup {
 .economics-row {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  width: 100px;
 }
 
 .scheme-block {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 112px;
-  height: 100px;
-  padding: 40px;
+  width: 200px;
+  height: 200px;
+  padding-right: 20px;
 }
 
 .economics-component {
@@ -174,5 +180,105 @@ sup {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.logos-top-wrapper {
+  height: 40px;
+}
+
+.p-highlight {
+  color: $font-normal-color-highlight;
+  font-family: $font-p;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.title-font {
+  font-family: $font-t;
+  color: $font-color-title;
+  font-size: 54px;
+  font-weight: 400;
+}
+
+.font-link {
+  font-family: $font-p;
+  font-size: 12px;
+  color: #306bac;
+  font-weight: 600;
+}
+
+a:hover 
+{
+     color: #306bac; 
+     text-decoration: none; 
+     cursor:pointer;  
+}
+
+span:hover 
+{
+  color: #306bac; 
+  text-decoration: none; 
+  cursor:pointer;  
+}
+
+.section-title {
+  font-family: $font-t;
+  color: $font-color-title;
+  font-size: 42px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.p-normal {
+  color: $font-normal-color;
+  font-family: $font-p;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.p-normal-small {
+  color: $font-normal-color;
+  font-family: $font-p;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.bullet-title {
+  font-family: $font-p;
+  color: $font-color-title;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.font-detail {
+  font-family: $font-p;
+  color: $font-color-title;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.number-highlight {
+  font-family: $font-p;
+  color: $font-color-title;
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.center-title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 20px;
+}
+
+.divide {
+  display: flex;
+  flex-direction: row;
 }

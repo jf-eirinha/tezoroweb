@@ -5,7 +5,7 @@ export default class TezoroBoxIcon extends Component {
         return (
             <img
                 src={require('../tezoroboxicon.svg')}
-                className="d-inline-block align-top"
+                className="scheme-block"
                 alt="Tezoro box icon"
             />
         )   
