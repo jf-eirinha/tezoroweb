@@ -83,8 +83,8 @@ $font-t: "Fira Sans", sans-serif;
 }
 
 .main-content {
-  margin-top: 80px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
 
 sup {
@@ -175,8 +175,9 @@ sup {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 500px;
   padding-right: 40px;
-  padding-left: 40px;
+  padding-left: 80px;
 }
 
 .economics-row {
@@ -184,6 +185,7 @@ sup {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-left: 60px;
 }
 
 .scheme-block {
@@ -311,8 +313,11 @@ span:hover
 }
 
 .scheme-wrapper {
-  padding-left: 200px;
+  display: block;
   padding-right: 20px;
+  padding-bottom: 40px;
+  width: 430px;
+  margin: 0;
 }
 
 .googlesap {
@@ -333,4 +338,20 @@ span:hover
   font-family: $font-p;
   font-size: 12px;
   color: #4f6df7;
+}
+
+.left-right-pd {
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-bottom: 40px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.scheme-class {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

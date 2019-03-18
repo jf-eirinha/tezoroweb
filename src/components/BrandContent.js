@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Grid from '@material-ui/core/Grid';
 
 export default class BrandContent extends Component {
     render() {
         return (
-            <div className="main-text-content-brands">
+            <Grid item className="main-text-content-brands">
                 <h1 className="section-title">For Brands</h1>
 
                 <h6 className="bullet-title">Differentiate yourself</h6>
@@ -21,7 +22,7 @@ export default class BrandContent extends Component {
                 <div className="links-wrapper">
                     <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950329316301203" className="reference-font"><sup>1</sup> Magnier, Lise & Schoormans, Jan & Mugge, Ruth. (2016). Judging a product by its cover: Packaging sustainability and perceptions of quality in food products. Food Quality and Preference. 53. 132-142. 10.1016/j.foodqual.2016.06.006. </a>
                 </div>
-            </div>
+            </Grid>
         )
     }
 }

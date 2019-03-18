@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Grid from '@material-ui/core/Grid';
 
 export default class ConsumerContent extends Component {
   render() {
     return (
-      <div className="main-text-content-consumers">
+      <Grid item className="main-text-content-consumers main-content">
         <h1 className="section-title">For Consumers</h1>
 
         <h6 className="bullet-title">These are just pennies, right?</h6>
@@ -22,7 +23,7 @@ export default class ConsumerContent extends Component {
           <a href="https://www.ey.com/Publication/vwLUAssets/Unwrapping_the_packaging_industry_–_seven_factors_for_success/$FILE/EY_Unwrapping_the_packaging_industry_-_seven_success_factors.pdf" className="reference-font"><sup>1</sup> Unwrapping the Packaging Industry, Seven Factors for Succes, Neil-Boss, N., & Brooks, K., Ernst & Young</a>
           <a href="https://www.census.gov/data/tables/time-series/demo/families/households.html" className="reference-font"><sup>2</sup> United States Census Bureau, Historical Household Tables</a>
         </div>
-      </div>
+      </Grid>
     )
   }
 }
