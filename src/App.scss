@@ -62,6 +62,20 @@ $font-t: "Fira Sans", sans-serif;
 .main-text-content {
   width: 460px;
   padding-left: 40px;
+  padding-right: 20px;
+}
+
+
+.main-text-content-consumers {
+  width: 550px;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.main-text-content-brands {
+  width: 550px;
+  padding-left: 20px;
+  padding-right: 40px;
 }
 
 .main-media-content {
@@ -308,4 +322,15 @@ span:hover
 .footer {
   padding: 40px;
   background-color: #F2F2F2;
+}
+
+.links-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.reference-font {
+  font-family: $font-p;
+  font-size: 12px;
+  color: #4f6df7;
 }
