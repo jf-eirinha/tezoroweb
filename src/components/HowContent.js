@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import HowCard from './HowCard';
+import ScreenshotComponent from './ScreenshotComponent';
 
 const styles = theme => ({
   root: {
@@ -33,7 +34,7 @@ function getSteps() {
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return <HowCard>
+      return <HowCard image={<ScreenshotComponent />}>
         <p className="p-normal">User opens the Tezoro app and selects an option to scan a product.</p>
         <p className="p-normal">Take picture of the product to prompt a box with information regarding its value in credits and CO2 saved.</p>
         <p className="p-normal">This is the first instance in which we can access package integrity</p>

@@ -6,10 +6,6 @@ import MainTextContent from './components/MainTextContent';
 import MainMediaContent from './components/MainMediaContent';
 import BrandContent from './components/BrandContent';
 import ConsumerContent from './components/ConsumerContent';
-import GoogleCloudLogo from './components/GoogleCloudLogo';
-import TensorFlowLogo from './components/TensorFlowLogo';
-import FlutterLogo from './components/FlutterLogo';
-import CardComponent from './components/CardComponent';
 import HowContent from './components/HowContent';
 import ArchComponent from './components/ArchComponent';
 import EconomicsComponent from './components/EconomicsComponent';
@@ -17,6 +13,10 @@ import TezoroBoxIcon from './components/TezoroBoxIcon';
 import StackedIcon from './components/StackedIcon';
 import TransportIcon from './components/TransportIcon';
 import DistChartComponent from './components/DistChartComponent';
+import SchemeComponent from './components/SchemeComponent';
+import EggsGif from './components/EggsGif';
+import YoGif from './components/YoGif';
+import BrandsGif from './components/BrandsGif';
 
 class App extends Component {
   render() {
@@ -40,7 +40,7 @@ class App extends Component {
             <MainTextContent />
           </Grid>
           <Grid item>
-            <MainMediaContent />
+            <EggsGif />
           </Grid>
         </Grid>
 
@@ -59,7 +59,7 @@ class App extends Component {
           alignItems="center"
           id="value">
           <ConsumerContent />
-          <MainMediaContent />
+          <YoGif />
         </Grid>
 
         <Grid container
@@ -67,7 +67,7 @@ class App extends Component {
           justify="center"
           alignItems="center"
           className="main-content">
-          <MainMediaContent />
+          <BrandsGif />
           <BrandContent />
         </Grid>
 
@@ -104,11 +104,11 @@ class App extends Component {
                       <p>cost of each pick-up</p>
                     </div>
                   </div>
-                  </div>
-                <DistChartComponent />
                 </div>
-                
-              
+                <DistChartComponent />
+              </div>
+
+
             </EconomicsComponent>
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -121,20 +121,23 @@ class App extends Component {
           </Grid>
         </Grid>
 
-        <h1 id="googlesap">Powered by Google and SAP</h1>
+        <h1 id="googlesap" className="section-title"> Powered by Google and SAP</h1>
         <Grid container
           direction="row"
           justify="center"
-          alignItems="center">
+          alignItems="center"
+          className="googlesap">
           <Grid item xs={12} sm={6}>
-            <MainMediaContent />
+            <div className="scheme-wrapper">
+              <SchemeComponent />
+            </div>
           </Grid>
           <Grid item xs={12} sm={6}>
             <ArchComponent />
           </Grid>
         </Grid>
 
-        <Grid container
+        {/* <Grid container
           direction="row"
           justify="space-around"
           alignItems="center">
@@ -153,20 +156,28 @@ class App extends Component {
               <FlutterLogo />
             </CardComponent>
           </Grid>
-        </Grid>
+        </Grid> */}
+
+
 
         <Grid container
           direction="row"
           justify="center"
-          alignItems="center"
+          alignItems="flex-start"
           className="footer">
-          <Grid item xs={12} sm={6}>
-            <div className="footer-title">
-              <h6>Legal Disclaimer</h6>
-            </div>
+          <Grid item xs={12} sm={6}
+          direction="row"
+          justify="center"
+          alignItems="center"
+          >
+            
           </Grid>
           <Grid item xs={12} sm={6}>
+          <div className="footer-title">
+              Legal Disclaimer
+            </div>
             <div className="footer-text">
+            
               <p>Tezoro is not a legal entity. It represents a personal initiative to enter the contest "Circular Economy 2030", sponsored by Google LLC and SAP SE.</p>
               <p>This website is solely intended as support material for entering such contest.</p>
               <p>We do not own any of the trademarked logos featured on the website. Its use was not authorized and does not constitute an endorsement by any of such brands.</p>
