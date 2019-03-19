@@ -41,7 +41,7 @@ function getStepContent(step) {
       </HowCard>;
     case 1:
       return <HowCard>
-        <p className="p-normal">User scans label information containing some unique data so that each item can only be registered once. A package illustration should appear on the screen indicating what area so scan.</p>
+        <p className="p-normal">User scans label information containing some unique data so that each item can only be registered once. A package illustration should appear on the screen indicating what area to scan.</p>
         <p className="p-normal">We hope to merge the first two steps in the future through the use of a unique "stamp" on each package label.</p>
       </HowCard>;
     case 2:
