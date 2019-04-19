@@ -13,7 +13,7 @@ export default class ArchComponent extends Component {
 
             <h6 className="bullet-title">Data from Operations</h6>
             <p className="p-normal-small">
-            Logistics data gets constantly fed to SAP S4/HANA. The several different image classifiers also make use of the ML models. Other data such as pick-up time stamps, inventory, etc. is stored to SAP’s database.
+            Logistics data gets constantly fed to SAP HANA. The several different image classifiers also make use of the ML models. Other data such as pick-up time stamps, inventory, etc. is stored to SAP’s database.
                 </p>
 
             <h6 className="bullet-title">Hot and Cold Storage</h6>
@@ -23,7 +23,7 @@ export default class ArchComponent extends Component {
 
             <h6 className="bullet-title">In the Cloud</h6>
             <p className="p-normal-small">
-              The models and the app will return data tables to SAP S4/HANA (credits, balances, product information, transactions, rewards redeemed, etc.) while picture files go to Google Cloud Storage.
+              The models and the app will return data tables to SAP HANA (credits, balances, product information, transactions, rewards redeemed, etc.) while picture files go to Google Cloud Storage.
             </p>
 
             <h6 className="bullet-title">Access to data and analytics</h6>
